@@ -1,3 +1,5 @@
+import { newCode } from "./utils";
+
 /**
  * Хранилище состояния приложения
  */
@@ -48,7 +50,7 @@ class Store {
       list: [
         ...this.state.list,
         {
-          code: this.state.list.slice(-1)[0].code + 1,
+          code: newCode(),
           counter: 0,
           title: "Новая запись",
         },
