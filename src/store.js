@@ -83,13 +83,6 @@ class Store {
       }),
     });
   }
-
-  /**
-   * Добавление кода
-   */
-  addCode() {
-    return this.code++;
-  }
 }
 
 export default Store;
